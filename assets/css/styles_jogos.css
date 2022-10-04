@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background :url(https://poltronanerd.com.br/wp-content/uploads/2022/01/poltrona-mortal_kombat_2021_bg.jpg)center no-repeat fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header{
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #8f4396ef 0%,#5b4991e0 50%, #2b9671f5 100%);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin:  32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #8f439683 0%,#5b499179 50%, #2b967131 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div{
+    background-color: #1e1b2788;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+}
+
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.5);
+}
+
+#jogos img {
+    border-radius: 8px;
+    width: 90px;
+}
+#movie_list2 img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+#person img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+#person_list2 img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+i{
+    width:35px;
+}
+.fa-github{
+    color: #171515;
+}
+
+.fa-linkedin{
+    color: #0e76a8;
+}
+
+.fa-instagram{
+    color:  #3f729b ;
+}
+
+.fa-facebook{
+    color:  #3b5998;
+}
+
+.btn {
+    background-color: #38322e;
+    border-radius: 50%;
+    bottom: 14px;
+    background-image: linear-gradient(90deg, #8f4396 0%,#5b4991 50%, #2b9670 100%);
+    color: #3f3f3f;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+
+}
+.btn::after {
+    content: '▲';
+      display: flex;
+      justify-content: center;
+      padding-left: 1,5px;
+      padding-top: 7px;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+.index{
+    border-radius: 50%;
+    bottom: 20px;
+    border: 0px;
+    background: linear-gradient(90deg, #8f4396 0%,#5b4991 50%, #2b9670 100%);
+    color: #3f3f3f;
+    left: 60px;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    z-index: 3;
+    text-size-adjust: 5px;
+}
+.index:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.botao2{
+    background-image: linear-gradient(90deg, #8f4396 0%,#5b4991 50%, #2b9670 100%);
+    color: rgba(0, 0, 0, 0.993);
+            width: 200px;
+            height: 60px;
+            border: 0;
+            font-size: 18px;
+            border-radius: 4px;
+            font-family: 'Raleway', sans-serif;
+            transition: .6s;
+            overflow: hidden;
+            height: 40px;
+            position: relative;
+            left:385px;
+    }
+    .botao2:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+    .botao3{
+        background-image: linear-gradient(90deg, #8f4396 0%,#5b4991 50%, #2b9670 100%);
+        color: rgba(0, 0, 0, 0.993);
+            width: 200px;
+            height: 60px;
+            border: 0;
+            font-size: 15px;
+            border-radius: 4px;
+            font-family: 'Raleway', sans-serif;
+            transition: .6s;
+            overflow: hidden;
+            height: 40px;
+                position: relative;
+                left:560px;
+    }
+    .botao3:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+        
+
+
+/*Animation */
+header div{
+    animation: fromTop .7s .2s backwards;
+
+}
+
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .3s;
+}
+
+main section:nth-child(3){
+    animation-delay: .6s;
+}
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
